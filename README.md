@@ -1,6 +1,6 @@
 # react-poptip
 
-Rect component for display Tooltips and Popovers
+React component for display Tooltips and Popovers
 
 ## How to use
 
