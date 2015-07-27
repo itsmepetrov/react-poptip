@@ -49,7 +49,10 @@ export default class Tooltip extends Component {
 
     componentWillUnmount() {
         this.removeListeners();
-        if (!this.hidden) document.body.removeChild(this.tooltip);
+        if (!this.hidden) {
+            document.body.removeChild(this.tooltip);
+        }
+        React.unmountComponentAtNode(this.tooltip);
     }
 
     render() {
