@@ -1,8 +1,9 @@
-import React, {Component, PropTypes, findDOMNode} from 'react';
+import React, { Component, PropTypes } from 'react';
+import { findDOMNode } from 'react-dom';
 import elementPosition from './position';
 import transitionDuration from './transition-duration';
 
-export default class Tooltip extends Component {
+export default class Poptip extends Component {
 
     static propTypes = {
         onClick: PropTypes.func,

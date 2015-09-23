@@ -30,6 +30,7 @@
     "eslint-plugin-react": "^2.7.0"
   },
   "peerDependencies": {
-    "react": ">=0.13.2 || ^0.14.0-beta3"
+    "react": ">=0.13.0 <0.15.0 || ^0.14.0-rc1",
+    "react-dom": ">=0.13.0 <0.15.0 || ^0.14.0-rc1"
   }
 }
