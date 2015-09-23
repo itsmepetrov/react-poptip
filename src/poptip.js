@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { findDOMNode } from 'react-dom';
+import { render, findDOMNode } from 'react-dom';
 import elementPosition from './position';
 import transitionDuration from './transition-duration';
 
@@ -61,7 +61,7 @@ export default class Poptip extends Component {
     }
 
     renderContent() {
-        React.render(this.props.content, this.tooltip, () => {
+        render(this.props.content, this.tooltip, () => {
             this.addTooltipClassNames();
             this.updateSize();
             this.removeListeners();
