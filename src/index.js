@@ -1,1 +1,1 @@
-export default from './poptip';
+export default from './Poptip';

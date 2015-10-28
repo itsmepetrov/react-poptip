@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
-import { render, findDOMNode } from 'react-dom';
-import elementPosition from './position';
-import transitionDuration from './transition-duration';
+import { render, findDOMNode, unmountComponentAtNode } from 'react-dom';
+import elementPosition from './utils/position';
+import transitionDuration from './utils/transition-duration';
 
 export default class Poptip extends Component {
 
@@ -53,7 +53,7 @@ export default class Poptip extends Component {
         if (!this.hidden) {
             document.body.removeChild(this.tooltip);
         }
-        React.unmountComponentAtNode(this.tooltip);
+        unmountComponentAtNode(this.tooltip);
     }
 
     render() {
